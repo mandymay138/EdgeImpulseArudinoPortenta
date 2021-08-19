@@ -1,0 +1,40 @@
+{
+    "version": 1,
+    "info": {
+        "title": "Image Block",
+        "author": "Mandy Wong",
+        "description": "Extract Face From Image",
+        "name": "Mandy Custom block",
+        "cppType": "custom_block",
+        "preferConvolution": false,
+        "visualization": "dimensionalityReduction",
+        "experimental": false,
+        "latestImplementationVersion": 1
+    },
+    "parameters": [
+        {
+            "group": "Channels",
+            "items": [
+                {
+                    "name": "Image Channels",
+                    "value": "Grayscale",
+                    "type": "string",
+                    "help": "Image Channel RGB or Grayscale",
+                    "param": "channels"
+                }
+            ]
+        },
+       {
+            "group": "Filter",
+            "items": [
+                {
+                    "name": "Extract Face",
+                    "value": true,
+                    "type": "boolean",
+                    "help": "Whether to extract face from the data",
+                    "param": "extract"
+                }
+            ]
+        }
+    ]
+}
